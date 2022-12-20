@@ -58,7 +58,7 @@ app.get("/",function(req,res){
       });
       res.redirect("/");
     }else{
-        res.render("List", {listTitle: "Today", newListItems: foundItems});
+        res.render("list", {listTitle: "Today", newListItems: foundItems});
     }
   })
 });
